@@ -1,0 +1,8 @@
+def calculate_gross_salary(): 
+BS = float(input("Enter the basic salary (BS): ")) 
+DA = 0.70 * BS # Dearness Allowance is 70% of BS 
+TA = 0.30* BS # Travel Allowance is 30% of BS 
+HRA = 0.10 * BS # House Rent Allowance is 10% of BS 
+gross_salary = BS + DA + TA + HRA 
+print(f"Gross Salary = {gross_salary}") 
+calculate_gross_salary() 
