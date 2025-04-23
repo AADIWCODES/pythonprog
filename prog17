@@ -1,0 +1,11 @@
+import re 
+def extract_data_from_text(filename): 
+ with open(filename, 'r') as file: 
+ text = file.read()
+ # Extract emails, phone numbers, and dates 
+ emails = 
+re.findall(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+', text)  phone_numbers = re.findall(r'\d{10}', text) 
+ dates = re.findall(r'\d{2}/\d{2}/\d{4}', text) 
+ print(f"Emails: {emails}") 
+ print(f"Phone Numbers: {phone_numbers}") 
+ print(f"Dates: {dates}") 
