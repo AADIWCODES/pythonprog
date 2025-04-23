@@ -1,0 +1,8 @@
+import pdb 
+def faulty_function(): 
+a = 10 
+b=0 
+pdb.set_trace() # Set a breakpoint 
+result = a/b # This will cause a ZeroDivisionError 
+print(result) 
+faulty_function() 
