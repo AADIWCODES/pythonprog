@@ -1,0 +1,16 @@
+import re 
+def validate_phone_email(): 
+phone = input("Enter phone number: ") 
+email = input("Enter email ID: ") 
+phone_regex = r'^[0-9]{10}$' 
+email_regex = 
+r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$' 
+if re.match(phone_regex, phone): 
+print("Phone number is valid.") 
+else: 
+print("Invalid phone number.") 
+if re.match(email_regex, email): 
+print("Email ID is valid.") 
+else: 
+print("Invalid email ID.") 
+validate_phone_email() 
